@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+
+  padding: 0 20px;
   background-color: aqua;
 }
 
@@ -23,18 +25,18 @@
 }
 
 .button-container {
-  width: 10vw;
-  height: 10vw;
+  width: clamp(120px, 70%, 240px);
+  height: clamp(60px, 10%, 120px);
 
-  margin: 1vw;
+  
 
   background-color: blue;
 }
 
 .sign-wrapper {
 
-  width: 30vw;
-  height: 30vw;
+  width: clamp(200px, 30vw, 500px);
+  height: clamp(200px, 30vw, 500px);
 
   background-color: cadetblue;
 }
@@ -48,4 +50,16 @@
   height: 4vw;
 
   background-color: brown;
+}
+
+@media only screen and (max-width: 425px) {
+  .button-list-container {
+    display: none;
+  }
+
+  .sign-wrapper {
+    width: clamp(160px, 80%, 500px);
+    height: clamp(160px, 80%, 500px);
+  }
+  
 }
