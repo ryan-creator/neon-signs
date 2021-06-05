@@ -1,30 +1,16 @@
  .button {
 
+    width: 70%;
+    margin: auto;
+
     font-size: 2rem;
     font-weight: 600;
 
     cursor: pointer;
-    padding: 1rem 2.5rem;
-
-    color: var(--button-glow);
-    text-shadow: 0 0 1rem var(--button-glow);
-
-    background-color: var(--button-background);
-    border: 0.25rem solid var(--button-glow);
+    padding: 1rem 0rem;
     border-radius: 0.25rem;
 
-    box-shadow: 
-        0 0 1rem var(--button-glow),
-        inset 0 0 1rem var(--button-glow);
-
-        transition: 
+    /* transition: 
         background-color 100ms linear,
-        box-shadow 100ms linear;
-}
-  
-.button:hover, .button:focus {
-    background-color: var(--button-glow);
-    box-shadow: 0 0 4rem var(--button-glow);
-    color: var(--button-background);
-    outline: none;
+        box-shadow 100ms linear; */
 }
