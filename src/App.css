@@ -1,7 +1,14 @@
+:root {
+  --button-glow: #FE019A;
+  --button-background: #black;
+}
+
 .page {
   width: 100vw;
   height: 100%;
   display: flex;
+
+  background-color: black;
 }
 
 .button-list-container {
@@ -12,7 +19,6 @@
   flex-direction: column;
 
   padding: 0 20px;
-  background-color: aqua;
 }
 
 .sign-container {
@@ -25,12 +31,7 @@
 }
 
 .button-container {
-  width: clamp(120px, 70%, 240px);
-  height: clamp(60px, 10%, 120px);
-
-  
-
-  background-color: blue;
+  position: relative;
 }
 
 .sign-wrapper {
